@@ -5,7 +5,7 @@ import * as yup from 'yup';
 
 const FormikFormWithYup = () => {
 
-    let FormSchema = yup.object().shape({
+    const FormSchema = yup.object().shape({
         email: yup.string().email().required('This field is required.'), 
         password: yup.string()
             .min(6, 'Password is too short.')
@@ -28,9 +28,7 @@ const FormikFormWithYup = () => {
     return (
         <div>
             <form onSubmit={formik.handleSubmit} >
-                <label> 
-                    Please Enter Email <br/>
-                </label> 
+                <label> Please Enter Email <br/> </label> 
                 <input 
                     type="text" 
                     id="email" 
@@ -43,8 +41,8 @@ const FormikFormWithYup = () => {
                     null
                 }
                 <br/>
-                <label> 
-                    Please Enter Password <br/>
+
+                <label> Please Enter Password <br/>
                 </label>
                 <input 
                     type="password" 
