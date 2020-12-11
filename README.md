@@ -1,1 +1,1 @@
-[Image](formik+yup.png)
+![Alt text](relative/formik+yup.jpg?raw=true "Title")
